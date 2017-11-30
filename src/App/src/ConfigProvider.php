@@ -33,12 +33,12 @@ class ConfigProvider
     public function getDependencies()
     {
         return [
-            'invokables' => [
-                Action\PingAction::class => Action\PingAction::class,
-            ],
-            'factories'  => [
-                Action\HomePageAction::class => Action\HomePageFactory::class,
-            ],
+//             'invokables' => [
+//                 Action\PingAction::class => Action\PingAction::class,
+//             ],
+//             'factories'  => [
+//                 Action\HomePageAction::class => Action\HomePageFactory::class,
+//             ],
         ];
     }
 
