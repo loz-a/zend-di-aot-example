@@ -25,6 +25,13 @@ class ConfigProvider
     public function getDependencies()
     {
         return [
+            'auto' => [
+                'aot' => [
+                    'namespace' => __NAMESPACE__ . '\\Generated',
+                    'directory' => __DIR__ . '/../gen',
+                ],
+            ],
+
             'factories' => $this->getGeneratedFactories(),
             'delegators' => [
                 InjectorInterface::class => [
